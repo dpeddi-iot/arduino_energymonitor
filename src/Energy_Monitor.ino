@@ -259,6 +259,9 @@ void setup() {
   Serial.begin(115200);
   delay(10);
 
+  Serial.println("EnergyMonitor");
+  Serial.println("BUILD_TIME:" + String(BUILD_TIME));
+  
   // Use this initializer if you're using a 1.8" TFT
   tft.initR(INITR_BLACKTAB);   // initialize a ST7735S chip, black tab
   tft.setTextWrap(false); // Allow text to run off right edge
